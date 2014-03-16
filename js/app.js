@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	$('.button').click(function() {
-		alert("It worked!");
+	$('.button').submit(function() {
+		val('.formfield');
+		alert('.formfield');
 	});
 });
