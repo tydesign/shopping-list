@@ -93,11 +93,16 @@ li {
 }
 
 .fa {
-	margin: 0 4px;
+	margin: 5px 4px;
 }
 
-.trash {
+.fa-trash-o {
 	float: right;
+}
+
+.fa-square-o, .fa-checked-square-o {
+	float: left;
+	vertical-align: middle;
 }
 
 button {
@@ -123,4 +128,25 @@ button:active {
 
 .centertext {
 	text-align: center;
+}
+
+/*	==========
+	NEW STYLES
+	==========*/
+
+#addButton {
+	background-color: #4da626;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+#shopList input {
+	display: block;
+}
+
+.checked {
+	text-decoration: line-through;
 }
