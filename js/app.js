@@ -6,11 +6,17 @@ $(document).ready(function() {
     }); // closes add item function
 
 
-    // CHECK ITEM
+    // CHECK ITEM TOGGLE
     $("i").click(function(){
 		if ($(this).hasClass('unchecked')) {
-			$(this).removeClass('fa-square-o').addClass('fa-check-square-o');
-			$(this).parent().addClass('checked');
+			$(this).removeClass('fa-square-o unchecked').addClass('fa-check-square-o');
+			$(this).parent().removeClass('unchecked').addClass('checked');
+		}
+		else {
+			if ($(this).parent().hasClass('checked')) {
+			$(this).parent().removeClass('checked').addClass('unchecked');
+			$(this).removeClass('fa-check-square-o').addClass('fa-square-o');
+			}
 		}
 	}); // closes completed item function
 
