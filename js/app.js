@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	// CHECK ITEM TOGGLE
 	$("#shopList li i").click(function(){
-		if ($(this).hasClass('unchecked')) {
+		if ($(this).parent().hasClass('unchecked')) {
 			$(this).removeClass('fa-square-o unchecked').addClass('fa-check-square-o');
 			$(this).parent().removeClass('unchecked').addClass('checked');
 		}
