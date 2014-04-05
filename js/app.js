@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// CREATE CHECKITEM FUNCTION
 	function checkItem() {
 		// CHECK ITEM TOGGLE
-		$("i").click(function(){
+		$("i").on('click','.checkbox', function(){
 			if ($(this).parent().hasClass('unchecked') !== $(this).hasClass('fa-trash-o')) {
 				$(this).removeClass('fa-square-o').addClass('fa-check-square-o');
 				$(this).parent().removeClass('unchecked').addClass('checked');
